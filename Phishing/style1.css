@@ -1,0 +1,81 @@
+body{
+    background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #dc6f66 45%,#64aeb6 60%,#285AEB 90%);
+    background-size: 400% 400%;
+    animation:anim 10.5s infinite ease-in-out;
+    color: #fff;
+}
+@keyframes anim{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content ;
+    border: 1px solid #fff;
+    background: rgb(210, 207, 207);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:rgb(57, 54, 54);
+    transition: backgroung 0.5s;
+}
+.btn:hover{
+    background:#f59331;
+}
+.contact-left form {
+    width: 70%;
+}
+form input, form textarea{
+    width: 60%;
+    border: 0;
+    outline: none;
+    background: #a3a7a8;
+    padding: 15px;
+    margin: 15px 400px;
+    color: #fff;
+    font-size: 18px;
+    border-radius:6px;
+}
+form .btn2{
+    margin-top: 20px;
+    margin: 15px 650px;
+}
+.contact-right p{
+    margin-top:30px ;
+    font-size: 15px;
+}
+.contact-right p i{
+    color: #181a1b;
+    margin-right: 15px;
+}
+.image img{
+    margin: 15px 280px;
+    width: 60%;
+}
+.row h1{
+    margin: 15px 570px;
+    color: #181a1b;
+    width: 70%;
+}
+#msg{
+    margin: 0px 400px;
+    width: 190%;
+    color: #181a1b;
+}
+.copyright{
+    width: auto;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 240px;
+  }
+  .copyright p{
+    font-size: 15px;
+  }
